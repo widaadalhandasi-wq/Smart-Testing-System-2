@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Testing System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <main id="logform">
+        <div class="container">
+            <form action="" class="py-5">
+                <h1>Login Form:</h1>
+                <hr>
+                <div class="form-group my-5">
+                    <label for="useremail">User Email</label>
+                    <input type="email" class="form-control" id="useremail">
+                </div>
+
+                <div class="form-group my-5">
+                    <label for="userpass">User Password</label>
+                    <input type="password" class="form-control" id="userpass">
+                </div>
+
+                <button id="logbtn" class="btn btn-primary">Login</button>
+            </form>
+
+            <div id="errMess" class="alert alert-danger p-2 d-none">Invalid Email Or Password</div>
+            <div id="succMess" class="alert alert-success p-2 d-none">Login Successfully</div>
+        </div>
+    </main>
+
+    <section id="test" class="d-none">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Math Test</h2>
+                <button onclick="logout()" class="btn btn-outline-danger">Logout</button>
+            </div>
+
+            <hr>
+
+            <div class="form-group py-3">
+                <label for="questionsNum">Enter Number Of Questions:</label>
+                <input type="number" class="form-control my-3" id="questionsNum">
+                <button class="btn btn-primary" id="strTestBtn">Start Test</button>
+            </div>
+
+            <div id="testScreen" class="mt-4">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
